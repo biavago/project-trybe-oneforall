@@ -13,8 +13,8 @@ CREATE TABLE planos(
 INSERT INTO planos (plano_tipo, plano_valor) VALUES
 	('gratuito', 0.00),
 	('familiar', 7.99),
-	('universitário', 6.99),
-	('pessoal', 5.99);
+	('universitário', 5.99),
+	('pessoal', 6.99);
 
 CREATE TABLE artistas(
     artista_id	INT PRIMARY KEY AUTO_INCREMENT,
