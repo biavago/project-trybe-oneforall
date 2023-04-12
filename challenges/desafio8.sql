@@ -1,12 +1,10 @@
-SELECT
-  "Elis Regina" AS artista,
-  albuns
+SELECT 
+    ar.artista AS artista,
+    al.album AS album
 FROM
-  albuns AS alb
-  JOIN artista AS a ON a.artista_id = alb.artista_id
-WHERE
-  a.artista = "Elis Regina"
-ORDER BY
-  albuns ASC
-LIMIT
-  2;
+    artistas AS ar
+    INNER JOIN albuns AS al ON al.artista_id = ar.artista_id 
+        WHERE ar.artista = "Elis Regina"
+GROUP BY 
+    artista,
+    album;
